@@ -1,0 +1,98 @@
+body {
+    font: normal 18px/1.5 "Helvetica Neue", sans-serif;
+  }
+  
+  .efecto {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .efecto a {
+    position: relative;
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    color: #f7f2f2;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: flex .4s;
+  }
+  
+  .efecto .one {
+    background-image: url(../images/1c.jpg);
+    
+   
+  }
+  
+   
+  .efecto a:hover {
+    flex: 1;
+  }
+  
+  .efecto .overlay {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: background-color .4s;
+  }
+  
+  .efecto a:hover .overlay {
+    background-color: rgba(245, 243, 243, 0.808);
+  }
+  
+  .efecto .overlay h2 {
+    transform: translate3d(0, -60px, 0);
+  }
+  
+  .efecto .overlay p {
+    transform: translate3d(0, 60px, 0);
+   
+    }
+  
+  .efecto a:hover .overlay-inner * {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    transition: all .3s .3s;
+  }
+  
+ /* nav del encabezado */
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0b8494;
+    position: static;
+    top: 0;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* fondo color */
+  li a:hover {
+    background-color: #25bfd3;
+  } 
+
+  .active {
+    background-color: #04AA6D;
+  }
+
+  /*posicion header*/
