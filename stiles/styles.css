@@ -1,10 +1,12 @@
 body {
     font: normal 18px/1.5 "Helvetica Neue", sans-serif;
+   
   }
   
   .efecto {
     display: flex;
     height: 100vh;
+ /*cinco*/   margin: 5px 15px 2px;
   }
   
   .efecto a {
@@ -12,7 +14,7 @@ body {
     flex: 1;
     text-align: center;
     text-decoration: none;
-    color: #f7f2f2;
+/*dos*/    color: transparent;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -20,9 +22,15 @@ body {
   }
   
   .efecto .one {
-    background-image: url(../images/1c.jpg);
-    
-   
+    background-image:  url(../images/1c.jpg);
+/*seis*/    height: 250px;
+    width: 300px;
+  }
+
+  .efecto .two {
+    background-image:  url(../images/logoinformatica.png);
+/*seis*/    height: 320px;
+    width: 350px;
   }
   
    
@@ -41,26 +49,30 @@ body {
     bottom: 0;
     left: 0;
     transition: background-color .4s;
+    border-radius: 15px;
   }
   
   .efecto a:hover .overlay {
-    background-color: rgba(245, 243, 243, 0.808);
+    background-color: rgba(141, 236, 204, 0.808);
   }
   
   .efecto .overlay h2 {
     transform: translate3d(0, -60px, 0);
+  text-size-adjust: 20px;
   }
   
   .efecto .overlay p {
     transform: translate3d(0, 60px, 0);
+  
    
     }
   
-  .efecto a:hover .overlay-inner * {
+  .efecto a:hover .overlay-inner {
     opacity: 1;
     visibility: visible;
     transform: none;
     transition: all .3s .3s;
+  /*tres*/  font-size: 100%;
   }
   
  /* nav del encabezado */
@@ -69,7 +81,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #0b8494;
+    background-color: #38d6d6;
     position: static;
     top: 0;
   }
@@ -95,4 +107,13 @@ body {
     background-color: #04AA6D;
   }
 
-  /*posicion header*/
+  /*cuatro*/ header{
+    size: 160%;
+    text-align: center;
+    background-color: rgb(241, 109, 48);
+    font: 18px/1.5 arial;
+    margin: 5px 15px 2px;
+    color: #ffffff;
+  }
+ 
+ 
